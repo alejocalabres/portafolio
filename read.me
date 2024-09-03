@@ -1,0 +1,382 @@
+/* General */
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    border-bottom: 2px solid #e50914;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e50914;
+}
+
+/* Sobre mí */
+#about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    margin-top: 30px;
+    /* Añadido espacio con la barra de navegación */
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+/* Proyectos */
+#projects {
+    padding: 60px 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.project-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project-info a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.project-info a:hover {
+    color: #ff3b30;
+}
+
+/* Habilidades */
+#skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+#skills .skill {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #e50914;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Testimonios */
+#testimonials {
+    background-color: #1f1f1f;
+    padding: 60px 20px;
+}
+
+.testimonial {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial p {
+    font-size: 1.2em;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #e50914;
+}
+
+/* Formulario */
+#contact {
+    padding: 60px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #2c2c2c;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3b30;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    border-top: 2px solid #e50914;
+}
+
+footer a {
+    color: #e50914;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: #ff3b30;
+}
+
+nav ul li a.active {
+    background-color: #e50914;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Formulario de contacto */
+#contact {
+    padding: 60px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #2c2c2c;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3b30;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: white;
+    border-top: 2px solid #e50914;
+}
+
+footer a {
+    color: #e50914;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: #ff3b30;
+}
+
+/* Redes Sociales */
+footer p:last-of-type {
+    margin-top: 10px;
+}
+
+footer p:last-of-type a {
+    margin: 0 5px;
+}
+
+/* Redes Sociales */
+#social-media {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#social-media h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e50914;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-links a {
+    color: #e50914;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff3b30;
+}
+
+/* Ajustes adicionales */
+header,
+footer {
+    margin-bottom: 20px;
+}
+
+/* Redes Sociales */
+#social-media {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+#social-media h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e50914;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-links a {
+    color: #e50914;
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-links a:hover {
+    color: #ff3b30;
+}
+
+/* Ajustes adicionales */
+header,
+footer {
+    margin-bottom: 20px;
+}
+
